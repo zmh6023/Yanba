@@ -1,0 +1,5 @@
+<!--FirstPage.wxml-->
+<view class="container log-list">
+<view><image src="../../images/盐巴logo.png" background-size="cover"></image></view>
+<view>盐巴校园租赁平台</view>
+</view>
