@@ -1,10 +1,73 @@
-/**app.wxss**/
-.container {
+page,.page {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+  font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Droid Sans Fallback', 'Microsoft Yahei', sans-serif;
+}
+.page-bottom{
+  height: 100%;
+  width: 750rpx;
+  position: fixed; 
+  background-color: rgb(224, 224, 224);
+  z-index: 0;
+}
+.wc{
+  color: black;
+  padding: 30rpx 0 30rpx 40rpx;
+}
+.page-content{
+  padding-top: 300rpx;
+}
+.page-top{
+  height: 100%;
+  position: fixed;
+  width: 750rpx;
+  background-color: rgb(57, 125, 230);
+  z-index: 0;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+.page-top image{
+  position: absolute;
+  width: 68rpx;
+  height: 68rpx;
+  left: 20rpx;
+  top: 20rpx;
+}
+
+.touchback{
+  position: absolute;
+  width: 25vw;
+  height: 100vw;
+  left: 75vw;
+}
+
+.userInfo_avatar {
+  position: absolute;
+  width: 128rpx;
+  height: 128rpx;
+  left: 40rpx;
+  top: 40rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo_nickname{
+  display: block;
+  position: absolute;
+  left: 210rpx;
+  top: 100rpx;
+  width:100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.c-state1{
+  transform: rotate(0deg) scale(1) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(75%,0%); 
+}
+.c-state2{
+  transform: rotate(0deg) scale(.8) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(.8) translate(75%,0%); 
+}
